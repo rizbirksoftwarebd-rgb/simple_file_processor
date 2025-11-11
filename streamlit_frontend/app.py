@@ -14,7 +14,7 @@ class FileProcessorUI:
 
 st.title('OOP File Processor UI')
 
-api_url = st.text_input('Backend URL', 'https://your-backend-url/process-file')
+api_url = st.text_input('Backend URL', 'https://simple-file-processor.onrender.com')
 api_key = st.text_input('API Key', 'test123')
 
 uploaded_file = st.file_uploader('Upload file', type=['pdf','csv','xls','xlsx'])
