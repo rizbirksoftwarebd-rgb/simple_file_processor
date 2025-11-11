@@ -1,14 +1,14 @@
 import os
 from fastapi import FastAPI, UploadFile, File, HTTPException, Header
 from fastapi.responses import FileResponse
-from processor import ProcessorFactory
-from utils import sanitize_filename, ensure_dirs
+from .processor import ProcessorFactory
+from .utils import sanitize_filename, ensure_dirs
 
 UPLOAD_DIR = 'uploads'
 RESULT_DIR = 'results'
 ensure_dirs(UPLOAD_DIR, RESULT_DIR)
 
-API_KEY = os.getenv('API_KEY','test123')  # simple API key
+API_KEY = os.getenv('API_KEY','your-secret-key')
 
 app = FastAPI(title='Simple OOP File Processor API')
 
