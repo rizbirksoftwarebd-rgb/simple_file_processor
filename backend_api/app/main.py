@@ -8,7 +8,7 @@ UPLOAD_DIR = 'uploads'
 RESULT_DIR = 'results'
 ensure_dirs(UPLOAD_DIR, RESULT_DIR)
 
-API_KEY = os.getenv('API_KEY','your-secret-key')
+API_KEY = os.getenv('API_KEY','your-secret-key')  #API_KEY=your-secret-key
 
 app = FastAPI(title='Simple OOP File Processor API')
 

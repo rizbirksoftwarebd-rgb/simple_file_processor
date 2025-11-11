@@ -15,8 +15,7 @@ class FileProcessorUI:
 st.title('OOP File Processor UI')
 
 api_url = st.text_input('Backend URL', 'https://simple-file-processor.onrender.com')
-api_key = st.text_input('API_KEY', 'your-secret-key')
-#API_KEY=your-secret-key
+api_key = st.text_input('API_KEY', 'your-secret-key')  #API_KEY=your-secret-key
 uploaded_file = st.file_uploader('Upload file', type=['pdf','csv','xls','xlsx'])
 if uploaded_file and st.button('Process & Download'):
     processor_ui = FileProcessorUI(api_url, api_key)
